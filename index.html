@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo de Chocolate</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="animaciones.css">
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link rel="stylesheet" href="mediaquerys.css">
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./imágenes/chocolate.png" alt="logo" />
+      </div>
+      <label for="menu-toggle" class="menu-label"
+        ><i class="fa-solid fa-bars"></i>
+      </label>
+      <input type="checkbox" id="menu-toggle" />
+
+     <!-- <div class="menu">-->
+        <ul class="navbar-list">
+          <li><a href="" class="navbar-link"></a>Home</li>
+          <li><a href="" class="navbar-link"></a>Beneficios</li>
+          <li><a href="" class="navbar-link"></a>Inicio</li>
+          <li><a href="" class="navbar-link"></a>Registrate</li>
+        </ul>
+      <!--</div>-->
+    </nav>
+
+    <section class="hero__section">
+      <div class="hero__section-text">
+        <h1>Mundo de <span>CHOCOLATE </span></h1>
+      </div>
+      <div class="hero__button">
+        <a href="#">Más info</a>
+      </div>
+    </section>
+    <!--................... About section....................-->
+    <section class="about-section">
+      <div class="container">
+        <h2 class="section-title">Quiénes somos</h2>
+        <p>
+          ¿Conocés a alguien que deteste el chocolate?<span> Nosotros</span> nos
+          declararamos adictos a él, y creemos que hasta nos resultaría raro
+          saber de alguien que no lo soportara.Queremos compartir con vos muchos
+          de los beneficios que aporta el chocolate.En la sección “Mas info”, te
+          regalamos algunas recetas para que disfrutes de este alimento derivado
+          del cacao.
+        </p>
+      </div>
+    </section>
+    <!--..........................Beneficios section..................-->
+    <section class="beneficios-section">
+      <div class="container">
+        <h2 class="section-title">Beneficios que aporta el Chocolate</h2>
+        <div class="beneficios-cardcontainer">
+          <article class="beneficios-card-grid">
+            <div class="beneficios-card-img">
+              <img src="./imágenes/cacao.png" alt="cacao" />
+            </div>
+            <div class="beneficios-card-text">
+              <p>
+                -El chocolate negro con un alto porcentaje de cacao manda
+                señales para que el cerebro libere serotonina, así como
+                endorfinas y dopamina, y de esta forma nos haga mejorar el humor
+                y reducir el estrés.
+              </p>
+            </div>
+          </article>
+
+          <article class="beneficios-card-grid">
+            <div class="beneficios-card-img">
+              <img src="./imágenes/choco.png" alt="choco" />
+            </div>
+            <div class="beneficios-card-text">
+              <p>
+                - Es muy rico en antioxidantes, superando al té verde y vino
+                tinto, debido a su alto contenido en vitamina C, fibra y
+                serotonina, que lo convierte en un excelente aliado para
+                prevenir enfermedades cardiovasculares, cerebrovasculares,
+                cáncer hepático, gástrico y de colon.
+              </p>
+            </div>
+          </article>
+
+          <article class="beneficios-card-grid">
+            <div class="beneficios-card-img">
+              <img src="./imágenes/Choco bloque.png" alt="" />
+            </div>
+            <div class="beneficios-card-text">
+              <p>
+                -Los componentes que posee el cacao liberan neurotransmisores,
+                los cuales son los responsables de nuestras emociones y de cómo
+                nos sentimos. Disfrutar de un rico chocolate mejora el estado de
+                ánimo y brinda energía. No es por el azúcar que incluye, sino
+                por los compuestos químicos naturales que posee el cacao.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-section-form">
+        <h2>Formulario de Contacto</h2>
+        <h3>Escribenos y en breve nos pondremos en contacto contigo</h3>
+        <!--<form action="submeter-formulario.php" method="post">-->
+          <label for="nombre" class="colocar_nombre"
+            >Nombre<span class="obligatorio">*</span>
+          </label>
+          <input
+            type="text"
+            name="intoducir_nombre"
+            id="nombre"
+            required="obligatorio"
+            placeholder="Escribe tu nombre"
+          />
+
+          <label for="email" class="colocar_email"
+            >Email<span class="obligatorio">*</span>
+          </label>
+          <input
+            type="email"
+            name="introducir_email"
+            id="email"
+            required="obligatorio"
+            placeholder="Escribe tu email"
+          />
+          <label for="telefone" class="colocar_telefono">Teléfono</label>
+          <input
+            type="tel"
+            name="introducir_telefono"
+            id="telefone"
+            placeholder="Escribe tu Teléfono"
+          />
+
+          <label for="asunto " class="colocar_asunto"
+            >Asunto<span class="obligatorio">*</span></label
+          >
+          <input
+            type="text"
+            name="introducir_asunto"
+            id="asunto"
+            required="obligatorio"
+            placeholder="Escribe un asunto (mas info,recetas)"
+          />
+          <label for="mensaje" class="colocar_mensaje"
+            >Mensaje<span class="obligatorio">*</span></label
+          >
+          <textarea
+            name="introducir_mensaje"
+            class="texto_mensaje"
+            id="mensaje"
+            required="obligatorio"
+            placeholder="Deja aquí tu comentario...."
+          ></textarea>
+
+          <button type="submit" name="enviar_formulario" id="enviar">
+            <p>Enviar</p>
+          </button>
+          <p class="aviso">
+            <span class="obligatorio">*</span>Los campos son obligatorios.
+          </p>
+        </form>
+      </div>
+      <div class="contact-section-iframe">
+        <h4>Nos Encontrás en: Bariloche</h4>
+        <p>25 de Mayo 1210</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5053.131283114655!2d-71.29907700119877!3d-41.143042539571695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b5dea1cec61%3A0xa2eca9c4a97d29a1!2sChocolates%20Torres!5e0!3m2!1ses-419!2sar!4v1696891382550!5m2!1ses-419!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <footer>
+      <img src="./imágenes/chocolate.png" alt="logo" />
+      <p>¡¡Date un gusto, sé feliz, consumi chocolate!!</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --padding-x: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  padding: 10px var(--padding-x); /*50px*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+
+  background: linear-gradient(to right, #fc4a1a, #f7b733, pink);
+  background-size: 300% 200%;
+  animation: movimiento 5s linear infinite alternate;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .logo img {
+  cursor: pointer;
+  width: 100%;
+  max-width: 150px;
+  min-width: 65px;
+  max-height: 60px;
+}
+.menu {
+  height: 100%;
+}
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 100%;
+}
+.navbar-list {
+  gap: 30px;
+  margin: 0px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  color: blue;
+  font-size: 16px;
+  font-family: Montserrat;
+  cursor: pointer;
+  font-weight: 500;
+}
+.navbar-list a {
+  text-decoration: none;
+  animation: movimiento 5s linear infinite alternate;
+  /* position: fixed;
+  top: 0;
+  z-index: 2;*/
+}
+
+.navbar-list :hover {
+  border-bottom: 1px solid blue;
+}
+.navbar i {
+  font-size: 36px;
+  color: brown;
+}
+
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+/*#menu-toggle:checked ~ .navbar-list {
+  display: flex;
+}*/
+/*........................................................*/
+.hero__section {
+  height: calc(100vh - 80px);
+  /* background-color: #9f8762;*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  gap: 60px;
+  margin-top: 80px;
+}
+
+/*   Animation Background   */
+.hero__section {
+  background: linear-gradient(to bottom right, #eba102, pink, #9f8762);
+  background-size: 300% 200%;
+  animation: movimiento 5s linear infinite alternate;
+}
+@keyframes movimiento {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.hero__section-text h1 {
+  font-size: 80px;
+  font-weight: 700;
+  color: rgb(165, 57, 7);
+  text-align: center;
+  background: linear-gradient(
+    to top,
+    skyblue,
+    rgb(48, 35, 18),
+    rgba(184, 126, 226, 0.899)
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.hero__section-text h1 {
+  animation: mover-izquierda-derecha 2s 3;
+  animation-fill-mode: forwards;
+}
+@keyframes mover-izquierda-derecha {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.hero__section-text span {
+  display: block;
+  font-weight: 800;
+}
+
+.hero__section a {
+  font-size: 18px;
+  height: 60px;
+  width: 60px;
+  color: darkblue;
+  border: 2px solid rgb(165, 57, 7);
+  border-radius: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+.hero__button {
+  transition: all 0.5s ease-in-out;
+}
+.hero__button:hover {
+  transform: scale(1.3);
+  transition: all 0.5s ease-in-out;
+}
+/*.............................About section.....................*/
+
+.about-section {
+  padding: 100px var(--padding-x);
+  background-color: azure;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(165, 42, 42);
+}
+.container span {
+  font-weight: 600;
+}
+.container p {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  color: black;
+}
+.container p::first-letter {
+  font-size: 30px;
+  color: rgb(165, 42, 42);
+  font-weight: 500;
+}
+/*...............................Section Beneficios...............*/
+.beneficios-section {
+  padding: 100px var(--padding-x);
+
+  background: linear-gradient(
+    to right,
+    rgb(179, 163, 163),
+    rgb(152, 192, 207),
+    rgb(179, 163, 163)
+  );
+}
+.beneficios-cardcontainer {
+  display: flex; /*grid*/
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 275px));
+  gap: 10%;
+  margin: 80px 0;
+}
+.beneficios-card-grid {
+  /*width: 100%;
+  height: 94%;*/
+  width: 250px;
+
+  height: 445px;
+  background-color: azure;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: 200px auto;
+  padding: 24px 25px;
+  gap: 5px;
+  box-shadow: 7px 5px 5px black;
+  align-content: center;
+  align-items: center;
+}
+.beneficios-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 145px;
+}
+.beneficios-card-img img {
+  /* width: 100%;
+  height: 100%;*/
+  max-height: 90px;
+  max-width: 180px;
+}
+.beneficios-card-text p {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.2;
+}
+/*.............................Contac section....................*/
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 70px 30px;
+  width: 100%;
+  gap: 50px;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, gray, azure, gray);
+}
+.contact-section-form {
+  /* width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;*/
+  background-color: rgb(152, 192, 207);
+  width: 440px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 20px;
+  padding: 30px 20px;
+}
+/*.label {
+  display: block;
+  float: center;
+}*/
+input {
+  background-color: #fbfbfb;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+textarea {
+  width: 405px;
+  height: 150px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+.contact-section-form button {
+  height: 45px;
+  padding: 0 5px;
+  margin: 10px 0 20px 0;
+  text-transform: uppercase;
+  background-color: #af6a9f;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  width: 400px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-section-form button:hover {
+  background-color: blue;
+  color: white;
+}
+#button p {
+  color: white;
+  font-weight: 400;
+}
+span.obligatorio {
+  color: red;
+}
+.aviso {
+  font-size: 13px;
+  font-weight: 500;
+  color: red;
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(165, 42, 42);
+  padding-bottom: 30px;
+}
+h3 {
+  font-size: 12px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.contact-section-iframe {
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  gap: 25px;
+}
+.contact-section-iframe p {
+  color: rgb(165, 42, 42);
+  font-size: 300;
+  padding: 5px;
+}
+.contact-section h4 {
+  padding: 5px;
+  color: rgb(165, 42, 42);
+  font-size: 300;
+}
+.contact-section-form-button p {
+  padding: 10px;
+  color: black;
+}
+iframe {
+  height: 250px;
+  width: 300px;
+}
+/*........................................Footer...............................*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px;
+  background: linear-gradient(to right, #fc4a1a, #f7b733, pink);
+}
+footer img {
+  width: 60px;
+  height: 60px;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 700;
+  color: brown;
+}
