@@ -68,9 +68,6 @@
 .navbar-list a {
   text-decoration: none;
   animation: movimiento 5s linear infinite alternate;
-  /* position: fixed;
-  top: 0;
-  z-index: 2;*/
 }
 
 .navbar-list :hover {
