@@ -170,7 +170,7 @@
 }
 /*.............................About section.....................*/
 
-.about-section {
+#about-section {
   padding: 100px var(--padding-x);
   background-color: azure;
   gap: 50px;
@@ -204,7 +204,7 @@
   font-weight: 500;
 }
 /*...............................Section Beneficios...............*/
-.beneficios-section {
+#beneficios-section {
   padding: 100px var(--padding-x);
 
   background: linear-gradient(
