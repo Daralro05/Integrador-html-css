@@ -32,7 +32,7 @@
   #menu-toggle:checked + .navbar-list {
     display: flex;
   }
-  .beneficios-section {
+  #beneficios-section {
     padding: 100px 60px;
   }
   .beneficios-cardcontainer {
@@ -62,13 +62,13 @@
   .hero__section-text h1 {
     font-size: 40px;
   }
-  .about-section {
+  #about-section {
     width: 380px;
   }
   .container p {
     font-size: 18px;
   }
-  .beneficios-section {
+  #beneficios-section {
     width: 380px;
     padding: 40px;
   }
