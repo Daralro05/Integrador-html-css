@@ -56,7 +56,7 @@
 }
 /*....................................320px.....................*/
 @media (max-width: 320px) {
-  .hero__section {
+  #hero__section {
     width: 380px;
   }
   .hero__section-text h1 {

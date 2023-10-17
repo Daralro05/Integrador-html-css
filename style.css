@@ -86,7 +86,7 @@
   display: flex;
 }*/
 /*........................................................*/
-.hero__section {
+#hero__section {
   height: calc(100vh - 80px);
   /* background-color: #9f8762;*/
   display: flex;
@@ -99,7 +99,7 @@
 }
 
 /*   Animation Background   */
-.hero__section {
+#hero__section {
   background: linear-gradient(to bottom right, #eba102, pink, #9f8762);
   background-size: 300% 200%;
   animation: movimiento 5s linear infinite alternate;
@@ -147,7 +147,7 @@
   font-weight: 800;
 }
 
-.hero__section a {
+#hero__section a {
   font-size: 18px;
   height: 60px;
   width: 60px;
