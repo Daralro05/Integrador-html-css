@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 .form {
+  width: 100%;
+
+  border: 2px solid brown;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
