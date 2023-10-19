@@ -4,9 +4,14 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+/*.section__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: gray;
+}*/
 .form {
-  width: 100%;
-
   border: 2px solid brown;
   border-radius: 10px;
   display: flex;
@@ -76,3 +81,4 @@ a {
   color: blue;
   text-decoration: none;
 }
+/*..........................................Formulario de Registro...........*/
