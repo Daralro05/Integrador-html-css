@@ -1,3 +1,9 @@
+@media (max-width: 1200px) {
+  .beneficios-cardcontainer {
+    gap: 3%;
+  }
+}
+
 @media (max-width: 992px) {
   .navbar-list {
     position: absolute;
@@ -53,40 +59,47 @@
   .hero__section-text h1 {
     font-size: 70px;
   }
+  #about-section {
+    padding: 2rem;
+  }
   #beneficios-section {
-    padding: 80px 20px;
-    width: 550px;
+    padding: 16px 16px;
+    width: 36rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
   #beneficios-section h2 {
     font-size: 20px;
   }
   .container {
-    width: 450px;
-    margin: 0;
+    width: 30rem;
   }
   .beneficios-cardcontainer {
-    width: 400px;
+    width: 29rem;
+    justify-content: center;
+    margin-left: 1rem;
   }
 }
 /*....................................320px.....................*/
 @media (max-width: 320px) {
   .navbar {
-    width: 320px;
+    width: 100%;
     padding: 10px 100px 10px 40px;
   }
 
   #hero__section {
-    max-width: auto;
+    width: 21rem;
   }
   .hero__section-text h1 {
     font-size: 30px;
   }
   #about-section {
-    width: 320px;
+    width: 21rem;
     padding: 100px 0;
   }
   .container {
-    width: 320px;
+    width: 19rem;
   }
   .section-title {
     font-size: 30px;
@@ -96,7 +109,7 @@
     width: 310px;
   }
   #beneficios-section {
-    width: 320px;
+    width: 21rem;
     padding: 40px 15px 40px 15px;
   }
   #beneficios-section-container {
@@ -114,7 +127,7 @@
     width: 200px;
   }
   .contact-section {
-    width: 320px;
+    width: 21rem;
     padding: 60px 0;
   }
   .contact-section-form {
@@ -136,9 +149,8 @@
     font-size: 20px;
   }
   footer {
-    width: 320px;
+    width: 21rem;
     justify-content: center;
     align-items: center;
-    padding: 5px;
   }
 }
