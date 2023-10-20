@@ -56,11 +56,15 @@
 }
 /*...................................576px.......................*/
 @media (max-width: 576px) {
+  #hero__section {
+    min-width: 600px;
+  }
   .hero__section-text h1 {
-    font-size: 70px;
+    font-size: 50px;
   }
   #about-section {
     padding: 2rem;
+    min-width: 600px;
   }
   #beneficios-section {
     padding: 16px 16px;
@@ -68,6 +72,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    min-width: 600px;
   }
   #beneficios-section h2 {
     font-size: 20px;
@@ -80,6 +85,12 @@
     justify-content: center;
     margin-left: 1rem;
   }
+  .contact-section {
+    min-width: 600px;
+  }
+  footer {
+    min-width: 600px;
+  }
 }
 /*....................................320px.....................*/
 @media (max-width: 320px) {
@@ -90,6 +101,7 @@
 
   #hero__section {
     width: 21rem;
+    max-width: 600px;
   }
   .hero__section-text h1 {
     font-size: 30px;
