@@ -131,7 +131,7 @@
 }
 
 .hero__section-text h1 {
-  animation: mover-izquierda-derecha 2s 3;
+  animation: mover-izquierda-derecha 2s 2;
   animation-fill-mode: forwards;
 }
 @keyframes mover-izquierda-derecha {
