@@ -40,6 +40,7 @@
   min-width: 65px;
   max-height: 60px;
 }
+
 .menu {
   height: 100%;
 }
@@ -59,7 +60,7 @@
   height: 100%;
   border: 1px solid transparent;
   transition: 0.3s;
-  color: blue;
+  color: red;
   font-size: 16px;
   font-family: Montserrat;
   cursor: pointer;
@@ -67,11 +68,12 @@
 }
 .navbar-list a {
   text-decoration: none;
+  color: brown;
   animation: movimiento 5s linear infinite alternate;
 }
 
 .navbar-list :hover {
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid brown;
 }
 .navbar i {
   font-size: 36px;
@@ -81,10 +83,9 @@
 #menu-toggle,
 .menu-label {
   display: none;
+  align-items: center;
 }
-/*#menu-toggle:checked ~ .navbar-list {
-  display: flex;
-}*/
+
 /*........................................................*/
 #hero__section {
   height: calc(100vh - 80px);
