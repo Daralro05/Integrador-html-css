@@ -127,7 +127,7 @@
     padding: 100px 0;
   }
   #about-section p {
-    font-size: 16px;
+    font-size: 18px;
   }
   .container {
     width: 19rem;
@@ -154,13 +154,13 @@
   }
   .beneficios-card-grid {
     width: 350px;
-    height: 510px;
+    height: 520px;
   }
   .beneficios-card-grid p {
-    font-size: 18px;
+    font-size: 20px;
   }
   .beneficios-card-text p {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.3;
     width: 230px;
   }
